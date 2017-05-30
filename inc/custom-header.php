@@ -19,7 +19,7 @@
 function webdesign_gusel_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'webdesign_gusel_custom_header_args', array(
 		'default-image'          => '',
-		'default-text-color'     => '000000',
+		'default-text-color'     => '1B6BA0',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
@@ -52,8 +52,7 @@ function webdesign_gusel_header_style() {
 		// Has the text been hidden?
 		if ( ! display_header_text() ) :
 	?>
-		.site-title,
-		.site-description {
+		.site-branding {
 			position: absolute;
 			clip: rect(1px, 1px, 1px, 1px);
 		}

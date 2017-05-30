@@ -112,18 +112,9 @@ gulp.task('browserSync', function() {
     });
 });
 
-gulp.task('scripts', ['modernizr'], function(callback) {
-    webpack(require('./webpack.config.js'), function(err, stats) {
-        if(err) {
-            console.log(err.toString());
-        }
 
-        console.log(stats.toString());
-        callback();
-    });
-});
 
-gulp.task('scriptsRefresh', ['scripts'], function() {
+gulp.task('scriptsRefresh', ['modernizr'], function() {
     browserSync.reload();
 });
 
