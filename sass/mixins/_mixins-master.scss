@@ -22,3 +22,21 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+@mixin atSmall {
+	@media (min-width: 600px) {
+		@content;
+	}
+}
+
+@mixin atMedium {
+	@media(min-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin atLarge {
+	@media(min-width: 1800px) {
+		@content;
+	}
+}

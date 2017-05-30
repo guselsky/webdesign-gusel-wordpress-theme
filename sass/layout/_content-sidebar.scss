@@ -1,19 +1,57 @@
-.content-area {
-	float: left;
-	margin: 0 (-$size__site-sidebar) 0 0;
-	width: $size__site-main;
+// The whole header element
+.site-header {
+	max-width: $size__site-container;
+	margin: 0 auto;
+	background-color: #EDB059;
 }
 
+// The Title and Tagline
+.site-branding {
+	padding: 0 15px;
+}
+
+// The main navigation
+.main-navigation {
+	padding: 0 15px;
+}
+
+// The whole mid section
+.site-content {
+	max-width: $size__site-container;
+	margin: 0 auto;
+	background-color: #ddd;
+}
+
+// The content area
+.content-area {
+	float: none;
+	margin: 0 (-$size__site-sidebar) 0 0;
+	width: $size__site-main;
+	padding: 15px;
+
+	@include atMedium {
+		float: left;
+	}
+}
+
+// The main section inside the content area
 .site-main {
 	margin: 0 $size__site-sidebar 0 0;
 }
 
-.site-content .widget-area {
-	float: right;
+// Sidebar area
+.widget-area {
+	float: left;
 	overflow: hidden;
-	width: $size__site-sidebar;
+	padding: 15px;
+
+	@include atMedium {
+		float: right;
+		width: $size__site-sidebar;
+	}
 }
 
+// Footer area
 .site-footer {
 	clear: both;
 	width: $size__site-main;
