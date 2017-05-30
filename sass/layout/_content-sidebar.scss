@@ -1,49 +1,33 @@
-// The whole header element
-.site-header {
-	max-width: $size__site-container;
-	margin: 0 auto;
-	background-color: #EDB059;
-}
-
-// The Title and Tagline
-.site-branding {
-	padding: 0 15px;
-}
-
-// The main navigation
-.main-navigation {
-	padding: 0 15px;
-}
-
 // The whole mid section
 .site-content {
 	max-width: $size__site-container;
 	margin: 0 auto;
-	background-color: #ddd;
+
 }
 
 // The content area
 .content-area {
 	float: none;
 	margin: 0 (-$size__site-sidebar) 0 0;
-	width: $size__site-main;
+	width: 100%;
 	padding: 15px;
-
+	background-color: #ddd;
 	@include atMedium {
 		float: left;
+		width: $size__site-main;
 	}
 }
 
 // The main section inside the content area
 .site-main {
-	margin: 0 $size__site-sidebar 0 0;
+	padding: 0;
 }
 
 // Sidebar area
 .widget-area {
-	float: left;
 	overflow: hidden;
 	padding: 15px;
+	width: 100%;
 
 	@include atMedium {
 		float: right;
@@ -54,5 +38,6 @@
 // Footer area
 .site-footer {
 	clear: both;
-	width: $size__site-main;
+	width: $size__site-container;
+	margin: 0 auto;
 }

@@ -42,8 +42,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@import "variables-site/variables-site";
 @import "mixins/mixins-master";
+@import "variables-site/variables-site";
 
 /*--------------------------------------------------------------
 # Normalize
@@ -106,3 +106,5 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media/media";
 
 @import 'layout/content-sidebar';
+
+@import 'modules/header';

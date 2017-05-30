@@ -1,0 +1,53 @@
+// The whole header element
+.site-header {
+	max-width: $size__site-container;
+	margin: 0 auto;
+	background-color: $mainOrange;
+}
+
+// The Title and Tagline
+.site-branding {
+	text-align: center;
+	padding: 0;
+
+	@include atSmall {
+		padding: 6rem 1rem;
+	}
+}
+
+.title-box {
+	width: 600px;
+	max-width: 100%;
+	margin: 0;
+	border: none;
+
+	@include atSmall {
+		max-width: 75%;
+		margin: 0 auto;
+		border: 1px solid $mainBlue;
+	}
+
+}
+
+.site-title a {
+	font-weight: 700;
+	font-size: 40px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $mainBlue;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.site-description {
+	font-weight: 100;
+	font-size: 20px;
+	color: $mainBlue;
+}
+
+// The main navigation
+.main-navigation {
+	padding: 0 15px;
+}
