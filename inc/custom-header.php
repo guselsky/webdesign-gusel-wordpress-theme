@@ -20,8 +20,8 @@ function webdesign_gusel_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'webdesign_gusel_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '1B6BA0',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'width'                  => 1200,
+		'height'                 => 380,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'webdesign_gusel_header_style',
 	) ) );

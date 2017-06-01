@@ -5,6 +5,25 @@
 	background-color: $mainOrange;
 }
 
+// The header image
+
+.header-image img {
+	display: block;
+	margin: auto;
+}
+
+// Stretch the Header image
+.header-background-image {
+	background: no-repeat center;
+	background-size: cover!important;
+}
+
+// Apply semi transparent background to site branding
+.header-background-image .title-box {
+	background: #333;
+	background: hsla(0, 0%, 0%, .7);
+}
+
 // The Title and Tagline
 .site-branding {
 	text-align: center;
@@ -46,5 +65,11 @@
 
 // The main navigation
 .main-navigation {
-	padding: 0 15px;
+	
+	padding: 0;
+
+	@include atSmall {
+		padding: 0 15px;
+	}
+	
 }

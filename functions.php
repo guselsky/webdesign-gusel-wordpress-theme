@@ -45,6 +45,7 @@ function webdesign_gusel_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', 'webdesign-gusel' ),
+		'social' => __( 'Social Menu', 'webdesign-gusel' )
 	) );
 
 	/*
